@@ -40,7 +40,7 @@ function drawAgeStrokeChart() {
 
         // 将转换后的数据设置到图表配置项中
         ageOptions.xAxis.data = ageChartData.map(function (item) {
-            return item.age;
+            return item.name;
         });
         ageOptions.series[0].data = ageChartData;
         ageOptions.legend.data = ageChartData.name;
