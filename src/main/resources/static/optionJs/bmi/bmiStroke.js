@@ -7,7 +7,9 @@ function drawBmiStrokeChart() {
         var bmiData = data;
         var bmiOptions = {
             title: {
-                text: 'Bmi-Stroke Relationship'
+                text: 'Bmi-Stroke Relationship',
+                x: '300px',
+                y: '7px',
             },
             xAxis: {
                 type: 'category',

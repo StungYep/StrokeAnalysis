@@ -7,7 +7,9 @@ function drawBloodStrokeChart() {
         let bloodData = data;
         let bloodOptions = {
             title: {
-                text: 'Blood-Stroke Relationship'
+                text: 'Blood-Stroke Relationship',
+                x: '300px',
+                y: '7px',
             },
             xAxis: {
                 type: 'category',

@@ -12,6 +12,8 @@
     <script src="optionJs/bmi/bmiStroke.js"></script>
     <script src="optionJs/blood/bloodStroke.js"></script>
     <script src="optionJs/smoking/smokingStroke.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="conf.css">
 </head>
 <body>
 
@@ -21,20 +23,21 @@
     </select>
 
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="ageStrokeChart" style="width: 1200px;height:400px;"></div>
-    <div id="hyperStrokeChart" style="width: 1200px;height:400px;"></div>
-    <div id="cardStrokeChart" style="width: 1200px;height:400px;"></div>
-    <div id="bmiStrokeChart" style="width: 1200px;height:400px;"></div>
-    <div id="bloodStrokeChart" style="width: 1200px;height:400px;"></div>
-    <div id="smokingStrokeChart" style="width: 1200px;height:400px;"></div>
+    <div id="ageStrokeChart" style="width: 1800px;height:400px;"></div>
+    <div id="bmiStrokeChart" style="width: 1800px;height:400px;"></div>
+    <div id="bloodStrokeChart" style="width: 1800px;height:400px;"></div>
+
+    <div id="hyperStrokeChart" style="width: 1800px;height:400px;"></div>
+    <div id="cardStrokeChart" style="width: 1800px;height:400px;"></div>
+    <div id="smokingStrokeChart" style="width: 1800px;height:400px;"></div>
 
 </body>
 <script>
     drawAgeStrokeChart();
-    drawHyperStrokeChart();
-    drawCardStrokeChart();
     drawBmiStrokeChart();
     drawBloodStrokeChart();
     drawSmokingStrokeChart();
+    drawHyperStrokeChart();
+    drawCardStrokeChart();
 </script>
 </html>

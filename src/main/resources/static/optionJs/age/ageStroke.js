@@ -7,7 +7,9 @@ function drawAgeStrokeChart() {
         var ageData = data;
         var ageOptions = {
             title: {
-                text: 'Age-Stroke Relationship'
+                text: 'Age-Stroke Relationship',
+                x: '300px',
+                y: '7px',
             },
             xAxis: {
                 type: 'category',
@@ -53,13 +55,13 @@ function drawAgeStrokeChart() {
         $('#filter').on('change', function () {
             const filterValue = $(this).val();
 
-            let filteredData = ageChartData.filter(function (item) {
+            let filteredData = ageData.filter(function (item) {
                 return item.isStroke === (filterValue === 'stroke' ? '1' : '0');
             });
 
             ageOptions.series[0].data = filteredData.map(function (item) {
                 return {
-                    name: item.bmiFlag,
+                    name: item.age,
                     value: item.count
                 };
             });
