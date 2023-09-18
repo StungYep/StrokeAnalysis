@@ -5,7 +5,9 @@ function drawHyperStrokeChart() {
     // 将转换后的数据设置到图表配置项中
     let hyperOptions  = {
         title: {
-            text: 'Hypertension-Stroke Relationship'
+            text: 'Hypertension-Stroke Relationship',
+            x: '200px',
+            y: '7px',
         },
         tooltip: {
             trigger: 'item',

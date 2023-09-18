@@ -1,9 +1,10 @@
 package analysis.Load
 
 import analysis.Common.Constants
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.{DataFrame, SaveMode, SparkSession}
 
 import java.io._
+import java.util.Properties
 import scala.io.Source
 
 object LoadUtil {
@@ -44,5 +45,15 @@ object LoadUtil {
     writer.write(jsonStr)
 
     writer.close()
+  }
+
+
+  def loadToDB(spark: SparkSession, res: DataFrame, properties: Properties, table: String): Unit = {
+    val tableName: String = Constants.dbName + "." + table
+
+    res
+      .write
+      .mode(SaveMode.Append.toString)
+      .jdbc(Constants.jdbcURL, tableName, properties)
   }
 }

@@ -1,0 +1,8 @@
+.chart-container {
+    display: flex;
+    flex-wrap: nowrap; /* 确保它们在同一行上 */
+}
+
+.chart-a, .chart-b, .chart-c {
+    flex-grow: 1; /* 使用此属性平均分配宽度 */
+}

@@ -5,7 +5,9 @@ function drawCardStrokeChart() {
     // 将转换后的数据设置到图表配置项中
     let cardOptions  = {
         title: {
-            text: 'Cardiopathy-Stroke Relationship'
+            text: 'Cardiopathy-Stroke Relationship',
+            x: '200px',
+            y: '7px',
         },
         tooltip: {
             trigger: 'item',
