@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src="echarts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!--    &lt;!&ndash; Local Js file to load json to build charts &ndash;&gt;-->
+    <script src="optionJs/age/ageStroke.js"></script>
+    <script src="optionJs/hyper/hyperStroke.js"></script>
+    <script src="optionJs/card/cardStroke.js"></script>
+    <script src="optionJs/bmi/bmiStroke.js"></script>
+    <script src="optionJs/blood/bloodStroke.js"></script>
+    <script src="optionJs/smoking/smokingStroke.js"></script>
+
+</head>
+<body>
+    <select id="filter">
+        <option value="stroke">stroke</option>
+        <option value="no-stroke">no-stroke</option>
+    </select>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="ageStrokeChart" style="width: 1800px;height:400px;"></div>
+    <div id="bmiStrokeChart" style="width: 1800px;height:400px;"></div>
+    <div id="bloodStrokeChart" style="width: 1800px;height:400px;"></div>
+    <div id="hyperStrokeChart" style="width: 1800px;height:400px;"></div>
+    <div id="cardStrokeChart" style="width: 1800px;height:400px;"></div>
+    <div id="smokingStrokeChart" style="width: 1800px;height:400px;"></div>
+
+    <script>
+        drawAgeStrokeChart();
+        drawBmiStrokeChart();
+        drawBloodStrokeChart();
+        drawSmokingStrokeChart();
+        drawHyperStrokeChart();
+        drawCardStrokeChart();
+    </script>
+</body>
+</html>
