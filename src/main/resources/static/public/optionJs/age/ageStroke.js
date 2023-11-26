@@ -44,7 +44,7 @@ function drawAgeStrokeChart() {
                 };
             });
 
-            // 将转换后的数据设置到图表配置项中
+            //
             ageOptions.xAxis.data = ageChartData.map(function (item) {
                 return item.name;
             });
